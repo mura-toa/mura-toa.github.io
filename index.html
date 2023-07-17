@@ -3,46 +3,158 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        >
         <title>mura-toa</title>
+        <link rel="icon" href="./img/chicken.png">
+        <link rel="apple-touch-icon" href="./img/chiken.png" sizes="180x180">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <div class="header">
-            <div class="header-logo">
-                mura-toa
+        <!-- header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary bg-gradient">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h2 class="text-white">mura-toa</h2>
+                </a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://mura-toa.github.io">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mura-toa.github.io/favorite">favorite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mura-toa.github.io/resume" tabindex="-1" aria-disabled="true">profile</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header-list">
-                <ul>
-                    <li><a href="https://mura-toa.github.io" id="home">home</a></li>
-                    <li><a href="https://mura-toa.github.io/favorite" id="favorite">favorite</a></li>
-                    <li><a href="https://mura-toa.github.io/resume" id="resume">resume</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
 
-        <div class="main">
-            <div class="main-title" style="text-align: center;">
-                <h2>hello world!()<br>
-                    welcome to mura-toa website!</h2>
+        <!--  features section-->
+        <section id="features" class="row w-100 py-0">
+            <div class="col-lg-6" style="text-align: center;">
+                <img src="./img/chicken.png" class="img-fluid" alt="chicken image">
             </div>
-            <div class="main-icon" style="text-align: center;">
-                <img src="chicken.png" alt="this is chicken's icon." width="200" height="200"/>
+            <div class="col-lg-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 pt-4">
+                            <h6 class="text-primary">Welcome to mura-toa website!</h6>
+                            <h2>ようこそmura-toaサイトへ！</h2>
+                            <p>あほちんでノーリスペクトなサイト。</p>
+                            <div class="feature d-flex mt-2">
+                                <div class="iconbox me-3">
+                                <i class="bx bxs-comment-detail"></i>
+                                </div>
+                                <div>
+                                    <a href="https://www.google.co.jp/">Google</a>
+                                </div>    
+                            </div>
+                            <div class="feature d-flex mt-2">
+                                <div class="iconbox me-3">
+                                <i class="bx bxs-comment-detail"></i>
+                                </div>
+                                <div>
+                                    <a href="https://twitter.com/">Twitter</a>
+                                </div>    
+                            </div>
+                            <div class="feature d-flex mt-2">
+                                <div class="iconbox me-3">
+                                <i class="bx bxs-comment-detail"></i>
+                                </div>
+                                <div>
+                                    <a href="https://www.rakuten.co.jp/">Rakuten</a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main-talk" style="text-align: center;">
-                <h3>広島の辺境の大学に通う情報の大学4年生です.</h3>
-                <p>最近知り合いがウェブサイトを作っていたので, 久々にウェブサイトを開いて更新しました．</p>
-                <p>いつの日か動的なウェブサイトを作りたいのだが, java scriptは書けないです. というか勉強する気が起きないです.</p>
-                <p>upload:2023-7-6</p>
-            </div>
-        </div>
+        </section>
 
-        <div class="footer">
-            <div class="footer-logo">
-                <a href="https://mura-toa.github.io" id="footer-icon"><img src="chicken.png" alt="this is chicken's icon." width="40" height="40"/></a>
+        <!-- contents section -->
+        <section id="contents" class="bg-light">
+            <div class="container">
+                <div class="row mb-4 ">
+                    <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">This site contents</h6>
+                    <h2>コンテンツ</h2>
+                    <p>趣味について(favorite), 人生について(about me), 経歴(resume).の3つのコンテンツがあります.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="contents-card card-effect" style="text-align: center">
+                                <img class="contents-img" src="./img/favorite.png" alt="favorite image">
+                                <h4 class="mb-0 mt-4"><a href="https://mura-toa.github.io/favorite">趣味について</a></h4>
+                                <p>私の趣味やハマっていること、得意なことについて紹介しています.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contents-card card-effect" style="text-align: center">
+                                <img class="contents-img" src="./img/aboutme.png" alt="about me image" >
+                                <h5 class="mb-0 mt-4"><a href="#">人生について</a></h5>
+                                <p>It's while making.<br>Please wait for a years.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contents-card card-effect" style="text-align: center">
+                                <img class="contents-img" src="./img/resume.jpg" alt="service3 image" >
+                                <h5 class="mb-0 mt-4"><a href="https://mura-toa.github.io/resume">経歴について</a></h5>
+                                <p></p>あんまり胸張って言えるような経歴でないですが、経歴や資格を紹介しています.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-info">
-                <a href="https://docs.github.com/" id="footer-info">this site used github.io</a>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                <div class="col-md-4">
+                    <img class="footer-icon" src="./img/chicken.png" alt="chicken image">
+                </div>
+                <div class="col-md-4 ms-auto">
+                    <h5 class="text-gray">Pages</h5>
+                    <ul class="list-unstyled">
+                    <li>Name: murakami toa</li>
+                    <li>Email: barenpengin@gmail.com</li>
+                    <li>Phone: +81 80-6817-3008</li>
+                    </ul>
+                </div>
+                </div>
             </div>
-        </div>
+            </div>
+        </footer>
+      
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"
+      ></script>
     </body>
 </html>
