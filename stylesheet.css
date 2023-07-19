@@ -1,0 +1,108 @@
+/*initialize*/
+body {
+    font-family: "Avenir Next", "Sora";
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: dark;
+    font-weight: 500;
+}
+
+a{
+    color: dark;text-decoration: none;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+/*-----------------*/
+/* header */
+.nav-item{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+/* welcome section */
+
+.wel-circles{
+    position: relative;
+    height: 58vh;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.wel-circle{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.wel-circle1{
+    background-color: rgb(87, 255, 87);
+    width: 630px;
+    height: 630px;
+    margin: -315px 0 0 -315px;
+}
+
+.wel-circle2{
+    background-color: rgb(84, 187, 255);
+    width: 420px;
+    height: 420px;
+    z-index: 1;
+    margin: -220px 0 0 -220px;
+}
+
+.wel-circle3{
+    background-color: rgb(255, 111, 255);
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    margin: -100px 0 0 -100px;
+}
+
+.wel-content{
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    mix-blend-mode: screen;
+    z-index: 4;
+}
+
+.wel-content h1{
+    font-size: 90px;
+    font-weight: 1000;
+}
+
+/* contents section */
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+ }
+  
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+  
+/* footer */
+.footer-top {
+    padding: 50px;
+    background-color: gainsboro;
+}
+
+.footer-icon{
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+}
