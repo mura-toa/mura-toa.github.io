@@ -85,6 +85,10 @@ section {
 }
 
 /* contents section */
+.text-info {
+    padding-top: 20px;
+}
+
 .card-effect {
     box-shadow: var(--box-shadow);
     background-color: #fff;
