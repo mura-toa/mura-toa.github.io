@@ -79,7 +79,9 @@ section {
 
 .wel-content h1{
     font-size: 90px;
-    font-weight: 1000;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* contents section */
