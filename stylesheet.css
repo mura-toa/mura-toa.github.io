@@ -64,7 +64,7 @@ section {
 }
 
 .wel-content{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -74,19 +74,21 @@ section {
     align-items: center;
     background-color: white;
     mix-blend-mode: screen;
-    z-index: 4;
+    z-index: 5;
 }
 
 .wel-content h1{
     font-size: 90px;
-    font-weight: 800;
+    font-weight: 500;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 4;
 }
 
 /* contents section */
-.text-info {
-    padding-top: 20px;
+.contents{
+    position: relative;
+    z-index: 10;
 }
 
 .card-effect {
